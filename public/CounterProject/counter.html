@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/public/dist/styles.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter Project</title>
+</head>
+<body>
+     <div class="bg-blue-600 rounded-md max-w-lg m-auto mt-16 shadow-sm  text-white">
+         <div class="text-center font-bold pt-6 space-y-4">
+            <h1 class="tracking-wide text-3xl uppercase">Counter App</h1>
+             <p class="text-5xl pb-2 count">0</p>
+         </div>
+         <hr class="pb-6 ">
+        <div class="flex justify-center gap-6 pb-6 font-semibold">
+            <button type="submit" class="flex items-center gap-4  px-6 py-2.5 bg-red-500 tetx-lg leading-tight rounded shadow-md hover:bg-red focus:shadow-lg">
+                <ion-icon name="remove-circle-outline" class=" font-extrabold"></ion-icon>
+                Sub
+            </button>
+            <button type="submit" class="flex items-center gap-4  px-6 py-2.5 bg-gray-100 text-black tetx-lg leading-tight rounded shadow-md hover:bg-red focus:shadow-lg">
+                <ion-icon name="refresh-circle-outline" class=" font-extrabold"></ion-icon>
+                Reset
+            </button>
+            <button type="submit" class=" flex items-center gap-4 px-6 py-2.5 bg-green-500 text-lg leading-tight rounded shadow-md hover:bg-green-600 focus:shadow-lg  active:bg-green-800 active:shadow-lg transition duration-150 ease-in-out">
+                <ion-icon name="add-circle-outline" class=" font-extrabold"></ion-icon>
+                Submit
+            </button>
+           
+        </div>
+     </div>
+     <script src="counter.js"></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
