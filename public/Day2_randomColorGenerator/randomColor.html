@@ -8,26 +8,29 @@
     <title>Random Color</title>
 </head>
 <body>
-    <div class="grid justify-items-center items-center min-h-screen"> 
-         <div class="bg-blue-700 rounded h-2/5 w-2/5">
+    <div class="min-h-screen "> 
+         <div class="bg-blue-700 m-auto mt-52  max-w-4xl rounded h-1/3">
             <div class="space-y-8 flex flex-col items-center mb-8">
                 <h1 class="text-2xl text-white  pt-5"> Random Hex color Generator</h1>
-                <p class="text-6xl text-white   border">#FFFFFF</p>
+                <p class="text-6xl text-white p-2   border">#FFFFFF</p>
                 
             </div>
             <hr>
-            <button type="submit" class="
+            <div class="m-5">
+                <button type="submit" class="
                 resetCounter flex items-center
                 gap-6  px-6 py-2.5 bg-gray-100
               text-black tetx-lg leading-tight
                 rounded shadow-md hover:bg-red
                 focus:shadow-lg
                 m-auto
-                mt-10
+                relative -top-3
                 ">
                 <ion-icon name="refresh-circle-outline" class="font-extrabold"></ion-icon>
                 Reset
             </button>
+            </div>
+          
          </div>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
