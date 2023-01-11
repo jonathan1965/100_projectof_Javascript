@@ -14,5 +14,6 @@ resetCounter.addEventListener("click", () => {
 
 sub.addEventListener("click", () => {
     count.innerHTML --;
+
 });
 
