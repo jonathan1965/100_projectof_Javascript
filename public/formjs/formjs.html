@@ -27,10 +27,55 @@ crossorigin="anonymous"
      </div>
   </div>
   <hr class="">
-  <div class="bg-red-500  grid grid-cols-5">
-       <div class="bg-black "> niko</div>
-       <div  class="bg-blue-900 col-span-2">niko</div>
-       <div class="bg-green-900 col-span-2">niko</div>
+  <div class=" h-75 m-10 grid grid-cols-7">
+       <div class=""></div>
+       <div class=" col-span-3">
+          <div class="mt-10 ml-10 space-y-8">
+            <h1 class="text-7xl font-black ">Love to create Javascript form</h1>
+            <div>
+              <div class="grid w-3/4 gap-6">
+
+                  
+             <!-- input start -->
+             <div>
+              <label for="price" class="block text-lg font-medium text-gray-700 ">Price</label>
+              <div class="relative mt-1 rounded-md shadow-sm">
+                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                  <span class="text-gray-500 sm:text-sm">$</span>
+                </div>
+                <input type="text" name="price" id="price" class=" bg  block w-full rounded-md border-gray-300 pl-7 pr-12 focus:border-indigo-500  focus:ring-indigo-500  sm:text-sm" placeholder="0.00">
+                <div class="absolute inset-y-0 right-0 flex items-center">
+                  <label for="currency" class="sr-only">Currency</label>
+                  <select id="currency" name="currency" class="h-full rounded-md border-transparent bg-transparent py-0 pl-2 pr-7 text-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                    <option>USD</option>
+                    <option>CAD</option>
+                    <option>EUR</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+             <!-- input end -->
+             <!-- input start -->
+             <div>
+              <label for="price" class="block text-lg font-medium text-gray-700 ">Email</label>
+              <div class="relative mt-1 rounded-md shadow-sm">
+                
+                <input type="text" name="price" id="price" class="block w-full rounded-md border-gray-300 pl-7 pr-12 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="Email">
+                
+               
+              </div>
+            </div>
+             <!-- input end -->
+             <div class="mt-10">
+              <input type="text" name="" id="" class="w-full rounded bg-blue-100">
+            </div>
+
+              </div>
+            </div>
+          </div>
+        </h1>
+       </div>
+       <div class="bg-green-500 col-span-3"></div>
   </div>  
    <script src="form.js"></script>
 </body>

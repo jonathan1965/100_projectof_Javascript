@@ -1,30 +1,27 @@
-const colors = require('tailwindcss/colors')
-const withMT = require("@material-tailwind/html/utils/withMT");
 
-module.exports = ({
-  purge: {
-    content: ['./public/**/*.html'],
-  },
-  darkMode: false, // or 'media' or 'class'
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './public/**/*.html/'
+  ],
   theme: {
     extend: {
-      fontFamily: {
-        Montserrat: ['Montserrat', 'sans-serif'],
-        Raleway: ['Raleway', 'sans-serif']},
-      colors:{
-        transparent: 'transparent',
-        current: 'currentColor',
-        cyan:colors.cyan,
-        teal:colors.teal
-      }
-    },
+      height: {
+        '75': '40rem',
+        '50': '25rem',
+        '100': '50rem',
+        '150': '100rem',
+        '200': '200rem',
+        '300': '300rem'
+      },
+    fontFamily: {
+      Montserrat: ['Montserrat', 'sans-serif'],
+      Raleway: ['Raleway', 'sans-serif']},
   },
-  variants: {
-    extend: {},
   },
   plugins: [
     require('tailwindcss-debug-screens'),
-    require('tw-elements/dist/plugin'),
-    require('@tailwindcss/typography')
-  ],
-})
+    require('@tailwindcss/forms')
+  ]
+}

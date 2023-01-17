@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "postcss ./src/styles.css -o ./public/dist/styles.css",
+    "build": "postcss ./src/styles.css -o ./public/dist/styles.css --watch",
     "watch": "onchange 'tailwind.config.js' './public/**/*.html' './src/**/*.css' -- npm run build",
     "prod": "NODE_ENV=production postcss ./src/styles.css -o ./public/dist/styles.css"
   },
@@ -13,23 +13,25 @@
   "license": "ISC",
   "dependencies": {
     "@material-tailwind/html": "^1.2.4",
-    "autoprefixer": "^10.2.1",
     "exports-loader": "^4.0.0",
     "grunt-concat-include": "^0.2.4",
     "grunt-contrib-copy": "^1.0.0",
     "gulp": "^4.0.2",
     "postcss-cli": "^8.3.1",
     "script-loader": "^0.7.2",
-    "tailwindcss": "^2.0.2",
     "tailwindcss-debug-screens": "^2.2.1",
     "tw-elements": "^1.0.0-alpha13"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
     "@webpack-cli/generators": "^3.0.1",
+    "autoprefixer": "^10.4.13",
     "gulp-concat": "^2.6.1",
     "gulp-uglify": "^3.0.2",
     "onchange": "^7.1.0",
+    "postcss": "^8.4.21",
     "prettier": "^2.8.2",
+    "tailwindcss": "^3.2.4",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1",
