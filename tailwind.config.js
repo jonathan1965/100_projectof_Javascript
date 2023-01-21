@@ -3,7 +3,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './public/**/*.html/'
+    './public/*/*.html/'
   ],
   theme: {
     extend: {
@@ -17,11 +17,14 @@ module.exports = {
       },
     fontFamily: {
       Montserrat: ['Montserrat', 'sans-serif'],
-      Raleway: ['Raleway', 'sans-serif']},
+      Raleway: ['Raleway', 'sans-serif'],
+      'Poppins': ['Poppins', 'sans-serif'],
+    }
   },
   },
   plugins: [
     require('tailwindcss-debug-screens'),
-    require('@tailwindcss/forms')
+    require('@tailwindcss/forms'),
+    require('tw-elements/dist/plugin')
   ]
 }

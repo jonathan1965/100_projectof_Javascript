@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/public/assets/Poppins/Poppins-Black.ttf') format('ttf');
+    src: url('/public/assets/Poppins/Poppins-BlackItalic.ttf') format('ttf');
+    src: url('/public/assets/Poppins/Poppins-Bold.ttf') format('');
+    src: url('/public/assets/Poppins/Poppins-BoldItalic.ttf') format('ttf');
+    src: url('/public/assets/Poppins/Poppins-ExtraBold.ttf') format('ttf');
+    src: url('/public/assets/Poppins/Poppins-ExtraBoldItalic.ttf') format('ttf');
+    src: url('/public/assets/Poppins/Poppins-ExtraLight.ttf') format('ttf');
+    src: url('/public/assets/Poppins/Poppins-ExtraLightItalic.ttf') format('ttf');
+    src: url('/public/assets/Poppins/Poppins-Italic.ttf') format('ttf');
+    src: url('/public/assets/Poppins/Poppins-Light.ttf') format('ttf');
+    src: url('/public/assets/Poppins/Poppins-LightItalic.ttf') format('ttf');
+    src: url('/public/assets/Poppins/Poppins-Medium.ttf') format('ttf');
+    src: url('/public/assets/Poppins/Poppins-MediumItalic.ttf') format('ttf');
+    src: url('/public/assets/Poppins/Poppins-Regular.ttf') format('ttf');
+    src: url('/public/assets/Poppins/Poppins-SemiBold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }

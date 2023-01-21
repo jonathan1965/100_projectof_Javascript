@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/public/dist/styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        .chart-TData {
+        font-size: 90px;
+}
+    </style>
+</head>
+
+<body class="bg-white font-Poppins">
+    <h1 class="text-4xl ">Jonathan</h1>
+    <div class="">
+    <div class="shadow-lg rounded-lg overflow-hidden  m-auto max-w-2xl">
+        <div class="py-3 px-5 bg-yellow-100 font-bold">Doughnut chart</div>
+        <canvas class="p-10" id="chartDoughnut" class=""></canvas>
+      </div>
+
+    </div> 
+      
+      <!-- Required chart.js -->
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      
+      <!-- Chart doughnut -->
+      <script>
+        const dataDoughnut = {
+          labels: ["JavaScript", "Python", "Ruby", "PHP"],
+          datasets: [
+            {
+              label: "My First Dataset",
+              data: [300, 50, 100 ,75],
+              backgroundColor: [
+                "rgb(133, 105, 241)",
+                "rgb(164, 101, 241)",
+                "rgb(101, 143, 241)",
+                "rgb(82, 143, 100)",
+              ],
+              hoverOffset: 4    ,
+            },
+          ],
+        };
+      
+        const configDoughnut = {
+          type: "doughnut",
+          data: dataDoughnut,
+          options: {},
+        };
+      
+        var chartBar = new Chart(
+          document.getElementById("chartDoughnut"),
+          configDoughnut
+        );
+      </script>
+
+     
+</body>
+</html>
