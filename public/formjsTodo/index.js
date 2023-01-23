@@ -2,11 +2,13 @@
 function displayName() {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
-    
+     var dates = document.getElementById("date").value
+
 
     var tasksDiv = document.getElementById("tasks");
     var newPara = document.createElement("p");
     var newparaTwo = document.createElement("p");
+    var newparaThree = document.createElement("p")
 
     var cardB = document.createElement("div");
         cardB.classList.add("card","mb-3")
@@ -20,28 +22,38 @@ function displayName() {
     var colTwo = document.createElement("div")
         colTwo.classList.add("col-sm-2","text-left")
         
-       
+         
     var butOn = document.createElement("div")
         butOn.classList.add("col-sm-4","text-right")     
      
-    var aLink = document.createElement("a");
+    let aLink = document.createElement("a");
         aLink.classList.add("btn","btn-danger");
         aLink.classList.add("text-white")   
+    
+    // var datesY = document.createElement("div")
+    //     datesY = document.classList.add("col-sm-2 ")
+    //     datesY = document.classList.add("tex-left")
+
     //column
     tasksDiv.appendChild(cardB);
     cardB.appendChild(cardBd);
     cardBd.appendChild(row)
     //end cards
     
+    
+
     //rows
     row.appendChild(col)
     row.appendChild(colTwo)
     row.appendChild(butOn)
-    //end-rows
+    row.appendChild(datesY)
+    end-rows
 
     //column
     col.appendChild(newPara);
     colTwo.appendChild(newparaTwo);
+
+
     aLink.textContent = "x";
     butOn.appendChild(aLink)
     // end-column
@@ -49,6 +61,18 @@ function displayName() {
 
     newPara.innerHTML = name;
     newparaTwo.innerHTML = email;
-   
-
+    
+    // // remove todo
+    aLink.onclick = function () {
+       tasksDiv.removeChild(cardB)
+     }
+  
 }
+
+function remove() {
+    aLink.addEventListener("click",function () {
+        tasksDiv.removeChild(cardB)
+    })
+}
+
+
