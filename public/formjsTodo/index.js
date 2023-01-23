@@ -2,7 +2,7 @@
 function displayName() {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
-     var dates = document.getElementById("date").value
+     var datesX = document.getElementById("dates").value;
 
 
     var tasksDiv = document.getElementById("tasks");
@@ -28,11 +28,11 @@ function displayName() {
      
     let aLink = document.createElement("a");
         aLink.classList.add("btn","btn-danger");
-        aLink.classList.add("text-white")   
+        aLink.classList.add("text-white"); 
     
-    // var datesY = document.createElement("div")
-    //     datesY = document.classList.add("col-sm-2 ")
-    //     datesY = document.classList.add("tex-left")
+    var datesY = document.createElement("div");
+        datesY.classList.add("col-sm-2");
+        datesY.classList.add("tex-left");
 
     //column
     tasksDiv.appendChild(cardB);
@@ -43,15 +43,20 @@ function displayName() {
     
 
     //rows
+    
     row.appendChild(col)
     row.appendChild(colTwo)
-    row.appendChild(butOn)
     row.appendChild(datesY)
-    end-rows
+    row.appendChild(butOn)
+    
+   
+   
 
     //column
+    datesY.appendChild(newparaThree);
     col.appendChild(newPara);
     colTwo.appendChild(newparaTwo);
+  
 
 
     aLink.textContent = "x";
@@ -60,19 +65,15 @@ function displayName() {
 
 
     newPara.innerHTML = name;
+    newparaThree.innerHTML = datesX
     newparaTwo.innerHTML = email;
+    
     
     // // remove todo
     aLink.onclick = function () {
        tasksDiv.removeChild(cardB)
      }
   
-}
-
-function remove() {
-    aLink.addEventListener("click",function () {
-        tasksDiv.removeChild(cardB)
-    })
 }
 
 
