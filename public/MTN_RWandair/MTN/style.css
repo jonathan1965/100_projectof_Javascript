@@ -1,0 +1,77 @@
+@import url(//db.onlinewebfonts.com/c/4baee4a2550da10078fd0d6dd9440bc1?family=MTN+Brighter+Sans);
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "MTN Brighter Sans"; src: url("//db.onlinewebfonts.com/t/4baee4a2550da10078fd0d6dd9440bc1.eot"); src: url("//db.onlinewebfonts.com/t/4baee4a2550da10078fd0d6dd9440bc1.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4baee4a2550da10078fd0d6dd9440bc1.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4baee4a2550da10078fd0d6dd9440bc1.woff") format("woff"), url("//db.onlinewebfonts.com/t/4baee4a2550da10078fd0d6dd9440bc1.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4baee4a2550da10078fd0d6dd9440bc1.svg#MTN Brighter Sans") format("svg");
+}
+main {
+    height: 70vh;
+}
+
+header {
+    background-image: url(/public/MTN_RWandair/MTN/Screenshot\ 2023-02-08\ 143254.jpg);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: 100%; 
+}
+
+
+.navbar {
+    height: 70px;
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    top: 25px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar , .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: rgb(45, 44, 44);
+}
+.nav-icon {
+    display: flex;
+    gap: 9px;
+}
+
+.main_body {
+    position: absolute;
+    top:270px;
+    left: 465px;
+    width: 30%;
+    font-size: 60px;
+    font-weight:900;
+}
+
+.main-lst-body{
+    position: relative;
+    bottom: 0px;
+    height: 100%;
+    
+}
+
+.back-body{
+  position: absolute;
+  bottom: 100px;
+  width: 95%;
+  height: 80px;
+  left: 50px;
+  background: rgba(123,123,123,.4);
+  backdrop-filter: blur(44px);
+  border-radius: 5px;
+  color: white;
+}
