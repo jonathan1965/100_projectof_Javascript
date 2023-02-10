@@ -75,3 +75,14 @@ header {
   border-radius: 5px;
   color: white;
 }
+
+@media (max-width:500px) {
+ header {
+    background-position-x: 60%;
+    height: 40vh;
+    background-size: 100%; 
+ }
+
+}
+
+/* end of ain section */
