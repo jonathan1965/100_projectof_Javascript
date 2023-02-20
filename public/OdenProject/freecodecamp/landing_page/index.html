@@ -4,38 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
     <header id="header">
-         <nav class="header_nav">
+         <nav class="header_nav nav-bar" id="nav-bar">
             <div class="logo_div">
-                <img class="logo" id="header-img" src="product-landing-page-logo (1).png" alt="">
+                <img class="logo" id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" id="header-img" src="product-landing-page-logo (1).png" alt="">
             </div>
 
-            <div>
-                <ul class="list">
-                    <li><a href="" class="nav-link">Features</a></li>
-                    <li><a href="" class="nav-link">How it works</a></li>
-                    <li><a href="" class="nav-link">Pricing</a></li>
+            <nav id="nav-bar nav-bar">
+                <ul class="list" >
+                    <li><a class="nav-link"  href="#features">Features</a></li>
+                    <li><a class="nav-link"  href="#works">How it works</a></li>
+                    <li><a class="nav-link"  href="#pricing">Pricing</a></li>
+                
                     
                    </ul>
-            </div>
+            </nav>
               
 
          </nav>
     </header>
    
-    <section>
+    <section >
 
     <div class="section_one">
         <div class="input_text">
-            <form action="https://www.freecodecamp.com/email-submit">
-                <h1>Handcrafted, home-made masterpieces</h1>
-                <input type="email" placeholder="Enter your email" required>
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <h1 id="features">Handcrafted, home-made masterpieces</h1>
+                <input
+                name="email"
+                id="email"
+                type="email"
+                placeholder="Enter your email address"
+                required>
                 <br>
-                <a class="button_md">Get Stated</a>
+                <input  id="submit" type="submit" value="Get Started" class="button_md">
             </form>
             
         </div>
@@ -50,7 +56,7 @@
             <ion-icon name="flame-outline" class="icon"></ion-icon>
         </div>
         <div>
-            <h1>Premium Materials </h1>
+            <h1 id="works">Premium Materials </h1>
             <p>Our trombones use the shiniest brass which is sourced locally.
                 This will increase the longevity of your purchase.</p>
         </div>
@@ -100,7 +106,7 @@
   <div class="cards">
      <div class="card_one">
        <div class="card_tittle">
-        <h1>TENOR TROMBONE</h1>
+        <h1  id="pricing">TENOR TROMBONE</h1>
        </div>
         <div class="card_body">
             <h1>$600</h1>
@@ -152,7 +158,7 @@
 </section>
 <footer>
     <div>
-        <ul class="list">
+        <ul class="list"  id="footer">
             <li><a href="" class="nav-link">Privacy</a></li>
             <li><a href="" class="nav-link">Terms</a></li>
             <li><a href="" class="nav-link">Contact</a></li>

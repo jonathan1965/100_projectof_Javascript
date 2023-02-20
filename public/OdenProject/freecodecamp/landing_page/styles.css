@@ -2,11 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
     background-color: #eee;
     position: relative;
+    border-bottom-left-radius: ;
 }
 
 header{
@@ -71,10 +73,7 @@ li a{
     font-size:20px;
     font-weight: 700;
 }
-.video{
-    width:420px;
-    height:340px; 
-}
+
 
 .section_two {
     padding: 20px;
@@ -99,6 +98,7 @@ li a{
     margin-bottom: 90px;
 
 }
+
 
 .cards {
      display: flex;
@@ -282,9 +282,7 @@ footer{
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-    /* body {
-        background-color: green;
-    } */
+  
 
     .header_nav {
         flex-direction: row;
