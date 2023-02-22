@@ -8,6 +8,11 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.herro{
+    display: flex;
+    flex-direction: column;
+}
+
 main {
     padding-top: 30px;
 }
@@ -21,6 +26,7 @@ main {
     overflow-y: scroll;
     height: 30vh;
     margin:2px;
+    cursor: pointer;
 }
 
 .menu div {
@@ -45,4 +51,59 @@ main {
 
 .list li:last-child{
     padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsiviness */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .herro{
+        display: flex;
+        flex-direction: row;
+    }
+
+    main{
+    border-right: 2px solid black;
+    
+/*   
+      background-color: red; */
+    }
+
+    .menu {
+        overflow-y: hidden;
+        height: 100%;
+        border-left:1px solid rgb(0, 0, 0);
+        border-right:none;
+        margin:0px;
+        cursor: pointer;
+    }
+
+    .wrapp{
+        width: 70%;
+        height: 100%;
+    }
+
+    .logo_title {
+        font-size: 25px;
+        
+    }
+
 }
