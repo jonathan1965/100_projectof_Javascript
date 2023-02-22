@@ -8,12 +8,9 @@
 body{
     background-color: #eee;
     position: relative;
-    border-bottom-left-radius: ;
+   
 }
 
-header{
-    
-}
 .logo_div {
     display: flex;
     justify-content: center;

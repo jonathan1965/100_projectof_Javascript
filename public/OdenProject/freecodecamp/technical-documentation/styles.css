@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main {
+    padding-top: 30px;
+}
+.logo_title {
+    text-align: center;
+    padding-bottom: 10px;
+}
+.menu {
+    padding-top:px;
+    border: 1px solid black;
+    overflow-y: scroll;
+    height: 30vh;
+    margin:2px;
+}
+
+.menu div {
+    border-bottom: 1px solid black;
+    padding: 8px 15px;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.wrapp{
+    padding:20px;
+}
+
+.para_into {
+    padding: 10px;
+    line-height: 20px;
+}
+
+.list{
+    padding:10px 10px 30px 50px;
+}
+
+.list li:last-child{
+    padding-top: 20px;
+}
