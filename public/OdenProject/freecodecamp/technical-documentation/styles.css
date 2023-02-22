@@ -107,3 +107,72 @@ main {
     }
 
 }
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    .herro{
+        display: flex;
+        flex-direction: row;
+    }
+
+    main{
+    border-right: 2px solid black;
+    
+/*   
+      background-color: red; */
+    }
+
+    .menu {
+        overflow-y: hidden;
+        height: 100%;
+        border-left:1px solid rgb(0, 0, 0);
+        border-right:none;
+        margin:0px;
+        cursor: pointer;
+    }
+
+    .wrapp{
+        width: 70%;
+        height: 100%;
+    }
+
+    .logo_title {
+        font-size: 25px;
+        
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .herro{
+        display: flex;
+        flex-direction: row;
+    }
+
+    main{
+    border-right: 2px solid black;
+    
+/*   
+      background-color: red; */
+    }
+
+    .menu {
+        overflow-y: hidden;
+        height: 100%;
+        border-left:1px solid rgb(0, 0, 0);
+        border-right:none;
+        margin:0px;
+        cursor: pointer;
+    }
+
+    .wrapp{
+        width: 70%;
+        height: 100%;
+    }
+
+    .logo_title {
+        font-size: 25px;
+        
+    }
+}
