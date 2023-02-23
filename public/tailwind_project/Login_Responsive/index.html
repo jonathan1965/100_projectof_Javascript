@@ -1,55 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <link rel="stylesheet" href="/public/dist/styles.css"/>
+    <link rel="stylesheet" href="/public/dist/styles.css" />
     <title>Document</title>
 </head>
+
 <body class="antialiased bg-gray-100">
     <div class="flex w-full min-h-screen justify-center items-center">
-     <div class="flex flex-col space-y-6 bg-cyan-700 w-full max-w-4xl p-8 rounded-xl shadow-lg text-white">
-    
-     <div class="flex flex-col justify-between">
-        <h1 class="font-bold text-4xl tracking-wide">Contact Us</h1>
-        <p>Lorem, ipsum dolor sit amet 
-            consectetur adipisicing elit. Natus expedita.</p>
-     </div>
-     <div class="flex flex-col space-y-6">
-        <div class="inline-flex space-x-2 items-center">
-            <ion-icon name="call" class="text-teal-300 text-xl"></ion-icon>
-            <span>+(123) 345 7680</span>
+        <div class="flex flex-col md:flex-row md:space-x-6 md:space-y-0 space-y-6 bg-cyan-700 w-full max-w-4xl p-8 rounded-xl shadow-lg text-white">
+            <div class="flex flex-col space-y-6 justify-between">
+            <div class="">
+                <h1 class="font-bold text-4xl tracking-wide">Contact Us</h1>
+                <p>Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Natus expedita.</p>
+            </div>
+            <div class="flex flex-col space-y-6">
+                <div class="inline-flex space-x-2 items-center">
+                    <ion-icon name="call" class="text-teal-300 text-xl"></ion-icon>
+                    <span>+(123) 345 7680</span>
+                </div>
+                <div class="inline-flex space-x-2 items-center">
+                    <ion-icon name="mail" class="text-teal-300 text-xl"></ion-icon>
+                    <span>+(123) 345 7680</span>
+                </div>
+                <div class="inline-flex space-x-2 items-center">
+                    <ion-icon name="location" class="text-teal-300 text-xl"></ion-icon>
+                    <span>+(123) 345 7680</span>
+                </div>
+            </div>
+            <div class="flex space-x-3">
+                <a href="">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+
+                <a href="">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+
+                <a href=""></a>
+                <ion-icon name="logo-whatsapp"></ion-icon>
+                <a href=""></a>
+            </div>
         </div>
-        <div class="inline-flex space-x-2 items-center">
-            <ion-icon name="mail" class="text-teal-300 text-xl"></ion-icon>
-            <span>+(123) 345 7680</span>
+            <div>
+                <div class="bg-white rounded-xl shadow-lg p-8 text-gray-600">
+                    <form action="" class="flex flex-col space-y-4">
+                        <div>
+                            <label for="" class="text-sm">Your Name</label>
+                            <input type="text" name="" id="" placeholder="Your name"
+                                class="ring-1 ring-gray-300 w-full rounded-md mt-2 px-4 py-2 outline-none focus:ring-2  focus:ring-teal-300">
+                        </div>
+                        <div>
+                            <label for="" class="text-sm">Email Address</label>
+
+                            <input type="email" name="" id="" placeholder="Enter your email"
+                                class="ring-1 ring-gray-300 w-full rounded-md mt-2 px-4 py-2 outline-none focus:ring-2  focus:ring-teal-300">
+                        </div>
+                        <div>
+                            <label for="" class="text-sm">Message</label>
+
+                            <textarea placeholder="Your name"
+                            rows="4"
+                                class="ring-1 ring-gray-300 w-full rounded-md mt-2 px-4 py-2 outline-none focus:ring-2  focus:ring-teal-300"></textarea>
+                        </div>
+                        <button class="inline-block self-end bg-cyan-700 text-white font-bold 
+                         rounded-lg px-6 py-2 uppercase text-sm">Send message</button>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="inline-flex space-x-2 items-center">
-            <ion-icon name="location" class="text-teal-300 text-xl"></ion-icon>
-            <span>+(123) 345 7680</span>
-        </div>
-     </div>
-          <div class="">
-            <a href="">
-                <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-            <a href="">
-                <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-            
-            <a href="">
-                <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-            
-            <a href=""></a>
-            <ion-icon name="logo-whatsapp"></ion-icon>
-            <a href=""></a>
-          </div>
     </div>
-    </div>
+</div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
