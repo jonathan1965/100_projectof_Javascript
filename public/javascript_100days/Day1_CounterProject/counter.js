@@ -4,11 +4,6 @@ const sub = document.querySelector('.sub')
 const resetCounter = document.querySelector('.resetCounter')
 let resetValue= "0"
 
-
-
-
-
-
 add.addEventListener("click", () => {
     count.innerHTML ++;
 });
