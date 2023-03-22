@@ -12,15 +12,22 @@
        <main clas="main_doc" id="main-doc">
         <h1 class="logo_title">JS Documentation</h1>
          <div class="menu">
-            <div><p>Introction</p></div>
-            <div><p>What you should already know</p></div>
-            <div><p>JavaScript and Java</p></div>
-            <div><p>Hello world</p></div>
-            <div><p>Variables</p></div>
-            <div><p>Declaring variables</p></div>
-            <div><p>Variable scope</p></div>
-            <div><p>Variable scope</p></div>
-            <div><p>Variable scope</p></div>
+            <div class="menu-list"><p>Introction</p></div>
+            <div class="menu-list"><p>What you should already know</p></div>
+            <div class="menu-list"><p>JavaScript and Java</p></div>
+            <div class="menu-list"><p>Hello world</p></div>
+            <div class="menu-list"><p>Variables</p></div>
+            <div class="menu-list"><p>Declaring variables</p></div>
+            <div class="menu-list"><p>Variable scope</p></div>
+            <div class="menu-list"><p>Global Variables</p></div>
+            <div class="menu-list"><p>Constant</p></div>
+            <div class="menu-list"><p>Data Types</p></div>
+            <div class="menu-list"><p>If else stetement</p></div>
+            <div class="menu-list"><p>While Statement</p></div>
+            <div class="menu-list"><p>Function declarations</p></div>
+            <div class="menu-list"><p>Reference</p></div>
+            <div ></div>
+
 
          </div>
        </main>
@@ -87,6 +94,318 @@
                  Functions can be properties of objects, executing as loosely typed methods.</p>
                  <p class="para_into">JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
                 </div>
+</section>
+
+<section class="section_four">
+    <div>
+     <h1>Hello World</h1>
+     <p class="para_into">To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
+          <br>
+            <p class="para_codes">
+                function greetMe(yourName) { alert("Hello " + yourName); }
+                greetMe("World");
+            </p>
+                 <p class="para_into">Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
+                </div>
+</section>
+
+<section class="section_five">
+    <div>
+     <h1>Variables</h1>
+     <p class="para_into"> You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
+          <br>
+          <p class="para_into">A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
+                 <p class="para_into">You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name..</p>
+                </div>
+</section>
+
+
+<section class="section_six">
+    <div>
+     <h1>Declaring variables</h1>
+     <p class="para_into"> You can declare a variable in three ways:</p>
+          <br>
+          <p class="para_into">With the keyword var. For example,</p>
+            <p class="para_codes">
+                var x = 42.
+            </p>
+                 <p class="para_into">This syntax can be used 
+                    to declare both local and global variables.</p>
+                
+                 
+                 <p class="para_into">By simply assigning it a value. For example,</p>
+                   <p class="para_codes">
+                       var x = 42.
+                   </p>
+                        <p class="para_into">This always declares a global variable. 
+                            It generates a strict JavaScript warning.
+                             You shouldn't use this variant.</p>
+                         
+                             <p class="para_into">With the keyword let. For example,</p>
+                             <p class="para_codes">
+                                let y = 13.
+                             </p>
+                                  <p class="para_into">This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
+                </div>
+</section>
+
+<section class="section_seven">
+    <div>
+     <h1>Variable scope</h1>
+     <p class="para_into">When you declare a variable outside 
+        of any function, it is called a global variable, because it 
+        is available to any other code in the current document. When 
+        you declare a variable within a function, it is called a local
+         variable, because it is available only within that function
+        JavaScript before ECMAScript 2015 does not have </p>
+          <br>
+          <p class="para_into">JavaScript before ECMAScript 2015 does not have block statement
+             scope; rather, a variable declared within a block is local to the function
+              (or global scope) that the block resides within. For example the following
+               code will log 5, because the scope of x is the function (or global context)
+               within which x is declared, not the block, which in this case is an if statement.
+             </p>
+            
+               <p class="para_codes">
+                if (true) { var x = 5; } console.log(x); // 5
+               </p>      
+         </div>
+</section>
+<section class="section_height">
+    <div>
+     <h1>Global variables</h1>
+     <p class="para_into">Global variables are in fact properties of the global object. 
+        
+        In web pages the global object is window, so you can set and access global 
+        variables using the window.variable syntax. </p>
+          <br>
+          <p class="para_into">Consequently, you can access global variables declared in one window or
+             frame from another window or frame by specifying the window or frame name. For example, 
+             if a variable called phoneNumber is declared in a document, you can refer to this variable 
+             from an iframe as parent.phoneNumber.
+             </p>     
+         </div>
+</section>
+<section class="section_nine">
+    <div>
+     <h1>Constants</h1>
+     <p class="para_into">You can create a read-only, named constant with the const keyword.
+         The syntax of a constant identifier is the same as for a variable identifier: 
+         it must start with a letter, underscore or dollar sign and can contain alphabetic,
+          numeric, or underscore characters.</p>
+          <br>    
+        <p class="para_codes">
+            const PI = 3.14;
+               </p>  
+               
+               <p class="para_into">A constant cannot change value through assignment 
+                or be re-declared while the script is running. It has to be initialized to a value</p> 
+                <p class="para_into">The scope rules for constants are the same as those for let block scope variables. 
+                    If the const keyword is omitted, the identifier is assumed to represent a variable.</p>   
+                    <p class="para_into">You cannot declare a constant with the same name
+                         as a function or variable in the same scope. For example:</p>     
+                         <p class="para_codes">
+                            // THIS WILL CAUSE AN ERROR function f() {}; const
+                            <br>
+                            f = 5; // THIS
+                            <br>
+                            WILL CAUSE AN ERROR ALSO function f() { const g =
+                            <br>
+                            5; var g;
+                            <br>
+                            //statements }
+                 </p>  
+
+                 <p class="para_into">However, object attributes are not protected,
+                     so the following statement is executed without problems.</p>
+                     <br>    
+                   <p class="para_codes">
+                    const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
+                    <br>
+                    "otherValue";
+                          </p>  
+         </div>
+</section>
+
+<section class="section_ten">
+    <div>
+     <h1>Data types</h1>
+    
+          <p class="para_into">The latest ECMAScript standard defines seven data types:</p>
+
+             <ul class="list">
+                 <li> Six data types that are primitives:
+                    <ul class="list-sec">
+                        <li>Boolean. true and false.</li>
+                        <li>null. A special keyword denoting a null value. Because JavaScript
+                            is case-sensitive,
+                            null is not the same as Null, NULL, or any other variant.</li>
+                        <li>undefined. A top-level property whose value is undefined.</li>
+                        <li>Number. 42 or 3.14159.</li>
+                        <li>String. "Howdy"</li>
+                        <li>Symbol (new in ECMAScript 2015). A data type 
+                            whose instances
+                             are unique and immutable.</li>
+                    </ul>
+
+                    </li>
+                    <li>and Object</li>
+               </ul>   
+               <p class="para_into">Although these data types are a relatively small 
+                amount, they enable you to perform useful functions with your applications.
+                 Objects and functions are the other fundamental elements in the language. 
+                 You can think of objects as named containers for values,
+                 and functions as procedures that your application can perform.</p>
+         </div>
+</section>
+
+<section class="section_elven">
+    <div>
+     <h1>if...else statement</h1>
+     <p class="para_into">Use the if statement to execute a statement if a logical 
+        condition is true. Use the optional else clause to execute a statement 
+        if the condition is false. An if statement looks as follows:</p>
+          <br>    
+        <p class="para_codes">
+            if (condition) { statement_1; } else {
+                <br>
+                statement_2; }
+               </p>  
+               
+               <p class="para_into">condition can be any expression that evaluates to true or false.
+                 See Boolean for an explanation of what evaluates to true and false. If condition
+                  evaluates to true, statement_1 is executed; otherwise, statement_2 is executed.
+                   statement_1 and statement_2 can be any statement, including further nested if
+                    statements.</p> 
+                  
+                    <p class="para_into">You may also compound the statements using
+                         else if to have multiple conditions tested in sequence, as follows:</p>     
+                         <p class="para_codes">
+                            if (condition_1) { statement_1; } else if
+                            <br>
+                            (condition_2) {
+                            <br>
+                            statement_2; } else if (condition_n) {
+                            <br>
+                            statement_n; } else {
+                            <br>
+                            statement_last; }
+                 </p>  
+
+                 <p class="para_into">In the case of multiple conditions only the first logical 
+                    condition which evaluates to true will be executed. To execute multiple statements,
+                     group them within a block statement ({ ... }) . In general, it's
+                     good practice to always use block statements, especially when nesting if statements:</p>
+                     <br>    
+                     <p class="para_codes">
+                        if (condition_1)
+                        <br>
+                        statement_1_runs_if_condition_is_true;
+                        <br>
+                        statement_2_runs_if_condition_is_true; } else {
+                        <br>
+                        statement_3_runs_if_condition_is_false;
+                        <br>
+                        statement_4_runs_if_condition_is_false; }
+             </p>  
+
+             <p class="para_into">It is advisable to not use simple assignments in a conditional expression,
+                 because the assignment can be confused with equality when glancing over the code. 
+                 For example, do not use the following code:</p>
+                 <br>    
+                 <p class="para_codes">
+                    if (x = y) { /* statements here */ }
+                 </p>  
+
+                 <p class="para_into">If you need to use an assignment in a conditional expression,
+                     a common practice is to put additional parentheses around the assignment.
+                      For example:</p>
+                    <br>    
+                    <p class="para_codes">
+                       if (x = y) { /* statements here */ }
+                    </p>  
+         </div>
+</section>
+
+<section class="section_twelve">
+    <div>
+     <h1>while statement</h1>
+     <p class="para_into">A while statement executes its statements
+         as long as a specified condition evaluates to true.
+          A while statement looks as follows:</p>
+          <br>    
+        <p class="para_codes">
+            while (condition) statement
+               </p>  
+               
+               <p class="para_into">If the condition becomes false, statement within the
+                 loop stops executing and control
+                 passes to the statement following the loop.</p> 
+                <p class="para_into">The condition test occurs before statement in the loop is executed.
+                     If the condition returns true, statement is executed and the condition is tested again.
+                      If the condition returns false, execution stops and control is passed to the statement following while.</p>   
+                    <p class="para_into">To execute multiple statements, use a block statement
+                         ({ ... }) to group those statements.</p>    
+                         <p class="para_into">Example:</p>   
+                         <p class="para_into">The following while loop iterates as 
+                            long as n is
+                             less than three:</p>   
+                         <p class="para_codes">
+                            var n = 0; var x = 0; while (n < 3) { n++; x += n; }
+                 </p>  
+
+                 <p class="para_into">However, object attributes are not protected,
+                     so the following statement is executed without problems.</p>
+                 
+                          <p class="para_into">With each iteration, the loop increments 
+                            n and adds that value to x. 
+                            Therefore, x and n take on the following values:</p>
+
+                          <ul class="list">
+                            <li> After the first pass: n = 1 and x = 1
+                               </li>
+                               <li>After the second pass: n = 2 and x = 3</li>
+                               <li>After the third pass: n = 3 and x = 6</li>
+                          </ul>   
+                          <p class="para_into">After completing the third pass, the condition n
+                             < 3 is no longer true, so the loop terminates.</p>
+         </div>
+</section>
+
+
+<section class="section_thrteen">
+    <div>
+     <h1>Function declarations</h1>
+
+     <p class="para_into">A function definition (also called a function declaration,
+         or function statement) consists of the function keyword, followed by:</p>
+
+             <ul class="list">
+               <li> The name of the function.</li>
+                  <li>A list of arguments to the function, enclosed in parentheses and separated by commas.</li>
+                  <li>The JavaScript statements that define the function, enclosed in curly brackets, { }.</li>
+             </ul>   
+             <p class="para_into">For example, the following code defines a simple function named square:</p> 
+        <p class="para_codes">
+            return number * number;
+               </p>  
+                <p class="para_into">Primitive parameters (such as a number) are passed to
+                     functions by value; the value is passed to the function, but if the 
+                     unction changes the value of the parameter, this change is not reflected
+                     globally or in the calling function.</p>   
+                  
+                
+         </div>
+</section>
+
+<section class="section_thrteen">
+    <div>
+     <h1>Reference</h1>
+             <ul class="list">
+               <li> All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/">mdv</a></li>
+               </ul>   
+                  
+         </div>
 </section>
 </div>
 </div>
