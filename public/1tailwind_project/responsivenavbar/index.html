@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="/public/dist/styles.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -18,49 +20,55 @@
 </head>
 
 <body class="bg-yellow-900 font-Poppins">
-    <h1 class="text-9xl text-rose-500 ">Jonathan</h1>
-    <div class="">
-    <div class="shadow-lg rounded-lg overflow-hidden  m-auto max-w-2xl">
-        <div class="py-3 px-5 bg-yellow-100 font-bold">Doughnut chart</div>
-        <canvas class="p-10" id="chartDoughnut" class=""></canvas>
-      </div>
-
-    </div> 
-      
-      <!-- Required chart.js -->
-      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-      
-      <!-- Chart doughnut -->
-      <script>
-        const dataDoughnut = {
-          labels: ["JavaScript", "Python", "Ruby", "PHP"],
-          datasets: [
-            {
-              label: "My First Dataset",
-              data: [300, 50, 100 ,75],
-              backgroundColor: [
-                "rgb(133, 105, 241)",
-                "rgb(164, 101, 241)",
-                "rgb(101, 143, 241)",
-                "rgb(82, 143, 100)",
-              ],
-              hoverOffset: 4    ,
-            },
-          ],
-        };
-      
-        const configDoughnut = {
-          type: "doughnut",
-          data: dataDoughnut,
-          options: {},
-        };
-      
-        var chartBar = new Chart(
-          document.getElementById("chartDoughnut"),
-          configDoughnut
-        );
-      </script>
-
-     
+  <nav class="bg-gray-800 text-white py-4 px-6 flex justify-between items-center">
+    <div class="flex items-center">
+      <img src="logo.png" alt="Logo" class="w-10 h-10 mr-2">
+      <span class="text-lg font-bold">Company Name</span>
+    </div>
+    <div class="hidden md:flex flex-grow justify-center">
+      <a href="#" class="text-gray-300 hover:text-white px-3 py-2">Link 1</a>
+      <a href="#" class="text-gray-300 hover:text-white px-3 py-2">Link 2</a>
+      <a href="#" class="text-gray-300 hover:text-white px-3 py-2">Link 3</a>
+      <a href="#" class="text-gray-300 hover:text-white px-3 py-2">Link 4</a>
+    </div>
+    <div class="md:hidden flex items-center">
+      <button id="toggle-sidebar" class="text-white hover:text-gray-300 focus:outline-none">
+        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+          <path id="sidebar-icon-open" d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" />
+          <path id="sidebar-icon-close" d="M6 18L18 6M6 6l12 12" class="hidden" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+  
+  <div id="sidebar" class="fixed top-0 left-0 h-full w-3/4 bg-gray-800 text-white py-4 px-6 transform transition duration-300 ease-in-out -translate-x-full">
+    <button id="close-sidebar" class="text-white hover:text-gray-300 absolute top-0 right-0 mt-4 mr-4 focus:outline-none">
+      <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+        <path d="M18 6L6 18M6 6l12 12" />
+      </svg>
+    </button>
+    <a href="#" class="block text-gray-300 hover:text-white px-3 py-2 my-2">Link 1</a>
+    <a href="#" class="block text-gray-300 hover:text-white px-3 py-2 my-2">Link 2</a>
+    <a href="#" class="block text-gray-300 hover:text-white px-3 py-2 my-2">Link 3</a>
+    <a href="#" class="block text-gray-300 hover:text-white px-3 py-2 my-2">Link 4</a>
+  </div>
 </body>
+<script>
+  const toggleSidebar = document.querySelector('#toggle-sidebar');
+const closeSidebar = document.querySelector('#close-sidebar');
+const sidebar = document.querySelector('#sidebar');
+
+toggleSidebar.addEventListener('click', () => {
+  sidebar.classList.toggle('-translate-x-full');
+  document.querySelector('#sidebar-icon-open').classList.toggle('hidden');
+  document.querySelector('#sidebar-icon-close').classList.toggle('hidden');
+});
+
+closeSidebar.addEventListener('click', () => {
+  sidebar.classList.add('-translate-x-full');
+  document.querySelector('#sidebar-icon-open').classList.remove('hidden');
+  document.querySelector('#sidebar-icon-close').classList.add('hidden');
+});
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
 </html>
